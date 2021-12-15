@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" id="principal">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <script src="https://kit.fontawesome.com/cb977fc41d.js" crossorigin="anonymous"></script>
+    <script defer src="retoExtraPlus.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav id="navbar-cajero">
+        <h1>Cajero Automático DEV.F</h1>
+        <span style="margin-top: 15px; font-size: 30px;"></span>
+    </nav>
+    <section id="login-cajero">
+       <div class="datos">
+            <i class="fas fa-user"></i>
+            <input type="text" id="usuario" placeholder="Usuario">
+       </div>
+        <div class="datos" style="display: flex; justify-content: space-between;">
+            <div>
+                <i class="fas fa-key"></i>
+                <input type="password" id="pass" placeholder="Contraseña">
+            </div>
+            <i class="fas fa-eye-slash" id="hide_pass"></i>
+        </div>
+        <button id="login">Ingresar</button>
+    </section>
+
+    <section id="opciones" style="visibility: hidden;">
+        <div class="operacion" id="consultar">Consultar saldo</div>
+        <div class="operacion" id="ingresar">Ingresar Monto</div>
+        <div class="operacion" id="retirar">Retirar Monto</div>
+        <a href="index.html" class="operacion" id="salir">Salir</a>
+    </section>
+
+</body>
+</html>
